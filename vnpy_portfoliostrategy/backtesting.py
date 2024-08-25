@@ -196,7 +196,7 @@ class BacktestingEngine:
 
             self.output(_("{}历史数据加载完成，数据量：{}").format(vt_symbol, data_count))
 
-        self.output(_("所有历史数据加载完成"))
+        self.output(_("所有历史数据加载完成,总的数据量为:{}").format(len(self.history_data)))
 
     def run_backtesting(self) -> None:
         """开始回测"""
